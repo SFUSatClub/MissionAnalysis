@@ -109,9 +109,9 @@ BEGIN Animation
 
     StartTime          11 Jun 2019 20:00:00.000000000
     EndTime            11 Jun 2020 20:00:00.000000000
-    CurrentTime        12 Jun 2019 03:35:07.772000000
+    CurrentTime        12 Jun 2019 18:19:57.772000000
     Direction          Forward
-    UpdateDelta        10.000000
+    UpdateDelta        5.000000
     RefreshDelta       0.010000
     XRealTimeMult      1.000000
     RealTimeOffset     0.000000
@@ -824,8 +824,8 @@ END MapData
 		LaunchWindowUseEntireTraj               Yes
 		LaunchWindowTrajMETStart                0.000
 		LaunchWindowTrajMETStop                 900.000
-		LaunchWindowStart                       0.000
-		LaunchWindowStop                        0.000
+		LaunchWindowStart                       -71020800.000
+		LaunchWindowStop                        -102556800.000
 		LaunchMETOffset                         0.000
 		LaunchWindowUseSecEphem                 No 
 		LaunchWindowUseScenFolderForSecEphem    Yes
@@ -1172,9 +1172,6 @@ END MapData
     END ExportDataFile
     
     BEGIN Desc
-    Begin ShortText
-
-    End ShortText
     Begin LongText
 Describes 2 scenarios for SFU's CHIME calibration satellite.
     End LongText
@@ -1526,8 +1523,8 @@ END Class
 
 Class Satellite
 
-	SFUSat1
-	SFUSat2
+	SFUSat-ISS
+	SFUSat-SS
 
 END Class
 
@@ -1543,11 +1540,19 @@ BEGIN References
     Instance Facility/SFUSat-ops
         Facility/SFUSat-ops
     END Instance
-    Instance Satellite/SFUSat1
-        Satellite/SFUSat1
+    Instance Satellite/SFUSat-ISS
+        Satellite/SFUSat-ISS
+        Satellite/SFUSat-ISS/Sensor/Sensor1
     END Instance
-    Instance Satellite/SFUSat2
-        Satellite/SFUSat2
+    Instance Satellite/SFUSat-ISS/Sensor/Sensor1
+        Satellite/SFUSat-ISS/Sensor/Sensor1
+    END Instance
+    Instance Satellite/SFUSat-SS
+        Satellite/SFUSat-SS
+        Satellite/SFUSat-SS/Sensor/Sensor2
+    END Instance
+    Instance Satellite/SFUSat-SS/Sensor/Sensor2
+        Satellite/SFUSat-SS/Sensor/Sensor2
     END Instance
 END References
 

@@ -97,12 +97,6 @@ BEGIN Extensions
     END ObjectCoverage
     
     BEGIN Desc
-    Begin ShortText
-
-    End ShortText
-    Begin LongText
-
-    End LongText
     END Desc
     
     BEGIN KeyValueMetadata

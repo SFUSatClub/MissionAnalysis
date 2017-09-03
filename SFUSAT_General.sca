@@ -1,47 +1,13 @@
 stk.v.11.0
 WrittenBy    STK_v11.0.0
 BEGIN Access 
-        Scenario/SFUSAT_General/Facility/CHIME
-        Scenario/SFUSAT_General/Satellite/SFUSat1
+        Scenario/SFUSAT_General/Facility/SFUSat-ops
+        Scenario/SFUSAT_General/Satellite/SFUSat-ISS
 
     IsComputed               Yes
     UpdateOnReference        Yes
     DupIsDifferent           No
-    UIOrderReversed          No
-    UITimePeriod             Object
-    UseLightTimeDelay        Yes
-    ClockHost                Base
-    TimeSense                Transmit
-    AberrationType           Annual
-    TimeDelayConvergence     5.000000e-005
-    MaxTimeStep              3.600000e+002
-    MinTimeStep              1.000000e-002
-    TimeConvergence          5.000000e-003
-    AbsValueConvergence      1.000000e-014
-    RelValueConvergence      1.000000e-008
-    DetectEventsUsingSamplesOnly No
-	BEGINUserList 
-        0.000000 86400.000000
-	ENDUserList 
-    Show                     Yes
-    Inherit                  Yes
-    ShowIV                   Yes
-    ShowLineGfx              Yes
-    ShowHiliteGfx            Yes
-    LineWidth                1.000000e+000
-    BEGIN  Crdn
-    END  Crdn
-
-END Access
-
-BEGIN Access 
-        Scenario/SFUSAT_General/Facility/CHIME
-        Scenario/SFUSAT_General/Satellite/SFUSat2
-
-    IsComputed               Yes
-    UpdateOnReference        Yes
-    DupIsDifferent           No
-    UIOrderReversed          No
+    UIOrderReversed          Yes
     UITimePeriod             Object
     UseLightTimeDelay        Yes
     ClockHost                Base
@@ -67,12 +33,12 @@ END Access
 
 BEGIN Access 
         Scenario/SFUSAT_General/Facility/SFUSat-ops
-        Scenario/SFUSAT_General/Satellite/SFUSat1
+        Scenario/SFUSAT_General/Satellite/SFUSat-SS
 
     IsComputed               Yes
     UpdateOnReference        Yes
     DupIsDifferent           No
-    UIOrderReversed          No
+    UIOrderReversed          Yes
     UITimePeriod             Object
     UseLightTimeDelay        Yes
     ClockHost                Base
@@ -97,8 +63,8 @@ BEGIN Access
 END Access
 
 BEGIN Access 
+        Scenario/SFUSAT_General/Satellite/SFUSat-SS/Sensor/Sensor2
         Scenario/SFUSAT_General/Facility/SFUSat-ops
-        Scenario/SFUSAT_General/Satellite/SFUSat2
 
     IsComputed               Yes
     UpdateOnReference        Yes

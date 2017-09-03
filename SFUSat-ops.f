@@ -102,9 +102,6 @@ BEGIN Extensions
     Begin ShortText
 SFU Satellite Operations
     End ShortText
-    Begin LongText
-
-    End LongText
     END Desc
     
     BEGIN KeyValueMetadata
